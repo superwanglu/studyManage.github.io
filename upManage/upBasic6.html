@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>奥数学习</title>
+   <style>
+        h2 {
+            text-align:center;
+        }
+</style>
+</head>
+<body style="background-color:white;">
+<a href="../menu.html?type=up"><button type="button" class="btn btn-primary btn-lg">返回</button></a>
+    <div class="container-fluid">
+        <div style="text-align:centerleft">
+            <div style="margin-left: 20%;width: 60%;">
+			  <div id = "main">
+                <h2>第六讲 能被30以下质数整除的数的特征</h2>
+				<P><FONT FACE="宋体" LANG="ZH-CN">　　大家知道，一个整数能被</font><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，那么它的个位数能被</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">整除；反过来也对，也就是一个数的个位数能被</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，那么这个数本身能被</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">整除</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">因此，我们说“一个数的个位数能被</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">整除”是“这个数能被</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">整除”的特征</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">在这一讲中，我们通过寻求对于某些质数成立的等式来导出能被这些质数整除的数的特征。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　为了叙述方便起见，我们把所讨论的数</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">记为：</font></p>
+  <p>　　<img src="../image/up6/1.png"></p>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <p>　　有时也表示为</p>
+  <p>　　<img src="../image/up6/2.png"></p>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　我们已学过同余，用</font><FONT FACE=" ,Times New Roman">mod2</FONT><FONT FACE="宋体" LANG="ZH-CN">表示除以</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">取余数</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">有公式：</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　①</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡</FONT><FONT FACE=" ,Times New Roman">a0</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">mod2</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　②</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡</FONT><FONT FACE=" ,Times New Roman">a1a0</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">mod4</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　③</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡</FONT><FONT FACE=" ,Times New Roman">a2a1a0</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">mod8</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　④</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡</FONT><FONT FACE=" ,Times New Roman">a3a2a1a0</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">mod16</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　这几个公式表明一个数被</font><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">，</FONT><FONT FACE=" ,Times New Roman">8</FONT><FONT FACE="宋体" LANG="ZH-CN">，</FONT><FONT FACE=" ,Times New Roman">16</FONT><FONT FACE="宋体" LANG="ZH-CN">）整除的特性，而且表明了不能整除时，如何求余数。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　此外，被</font><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">）整除的数的特征为：它的各位数字之和可以被</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">）整除</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">我们借用同余记号及一些运算性质来重新推证一下</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">如（</FONT><FONT FACE=" ,Times New Roman">mod9</FONT><FONT FACE="宋体" LANG="ZH-CN">），如果，</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">N=a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>0</sub></FONT><FONT FACE=" ,Times New Roman">=a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">1000+a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">100+a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">10+a</FONT><FONT SIZE=2><sub>0</sub></FONT></P>
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　＝</font><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×（</FONT><FONT FACE=" ,Times New Roman">999</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">）＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×（</FONT><FONT FACE=" ,Times New Roman">99+1</FONT><FONT FACE="宋体" LANG="ZH-CN">）＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×（</FONT><FONT FACE=" ,Times New Roman">9+1</FONT><FONT FACE="宋体" LANG="ZH-CN">）</FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>0</sub></FONT></P>
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　＝（</font><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>0</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）</FONT><FONT FACE=" ,Times New Roman">+</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">999+a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">99+a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">），</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　那么，等式右边第二个括号中的数是</font><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">的倍数，从而有</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>0</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">mod9</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　对于</font><FONT FACE=" ,Times New Roman">mod3</FONT><FONT FACE="宋体" LANG="ZH-CN">，理由相仿，从而有公式：</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　⑤</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡（…＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>0</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）（</FONT><FONT FACE=" ,Times New Roman">mod9</FONT><FONT FACE="宋体" LANG="ZH-CN">），</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡（…</FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>0</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）（</FONT><FONT FACE=" ,Times New Roman">mod3</FONT><FONT FACE="宋体" LANG="ZH-CN">）。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　对于被</font><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除的数，它的特征为：它的奇位数字之和与偶位数字之和的差（大减小）能被</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　先看一例</font><FONT FACE=" ,Times New Roman">.N=31428576</FONT><FONT FACE="宋体" LANG="ZH-CN">，改写</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">为如下形式：</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">N=6</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">11-1</FONT><FONT FACE="宋体" LANG="ZH-CN">）＋</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">99</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">）＋</FONT><FONT FACE=" ,Times New Roman">8</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">1001-1</FONT><FONT FACE="宋体" LANG="ZH-CN">）＋</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">9999</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">）＋</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">100001-1</FONT><FONT FACE="宋体" LANG="ZH-CN">）</FONT><FONT FACE=" ,Times New Roman">+1</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">999999+1</FONT><FONT FACE="宋体" LANG="ZH-CN">）</FONT><FONT FACE=" ,Times New Roman">+3</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">10000001-1</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">=6-7+5-8+2-4+1-3+7</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">11+5</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">99</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">8</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">1001+2</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">9999+4</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">100001+1</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">999999</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">10000001</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　由于下面这两行里，</font><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">99</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">1001</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">9999</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">100001</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">999999</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">10000001</FONT><FONT FACE="宋体" LANG="ZH-CN">都是</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">的倍数，所以</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">N=6-7</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">5-8</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">2-4</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">1-3</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">mod11</FONT><FONT FACE="宋体" LANG="ZH-CN">）。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　小学生在运算时，碰上“小减大”无法减时，可以从上面</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">的表达式最后一行中“借用”</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">的适当倍数（这样，最后一行仍都是</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">的倍数），把它加到“小减大”的算式中，这样就得到：</font></p>
+  <p>　　<img src="../image/up6/3.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">6-7</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">5-8</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">2-4</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">1-3</FONT><FONT FACE="宋体" LANG="ZH-CN">≡</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">mod11</FONT><FONT FACE="宋体" LANG="ZH-CN">）。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　现在总结成一般性公式（推理理由与例题相仿）</font><FONT FACE=" ,Times New Roman">.</font></P>
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　则</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡（</FONT><FONT FACE=" ,Times New Roman">a0-a1+a2-a3</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a4-a5</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a6-a7+</FONT><FONT FACE="宋体" LANG="ZH-CN">…）（</FONT><FONT FACE=" ,Times New Roman">mod11</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　或者：</P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　⑥</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">≡（（</FONT><FONT FACE=" ,Times New Roman">a0+a2+a4+</FONT><FONT FACE="宋体" LANG="ZH-CN">…）</FONT><FONT FACE=" ,Times New Roman">-</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">a1+a3+a5+</FONT><FONT FACE="宋体" LANG="ZH-CN">…））（</FONT><FONT FACE=" ,Times New Roman">mod11</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　（当不够减时，可添加</font><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">的适当倍数）。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　因此，一个自然数能被</font><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除的特征是：它的奇位数字之和与偶位数字之和的差（大减小）能被</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　我们这里的公式不仅包含整除情况，还包含有余数的情况。</P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　下面研究被</font><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除的数的特征。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　有一关键性式子：</font><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">13=1001</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <p>　　<img src="../image/up6/4.png"></p>
+  <p>　　<img src="../image/up6/5.png"></p>
+  <p>　　<img src="../image/up6/6.png"></p>
+  <p>　　<img src="../image/up6/7.png"></p>
+  </FONT> 
+  <p><FONT FACE="宋体" LANG="ZH-CN">　　所以</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">能被</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，相当于</font></p>
+  <p><font face="宋体" lang="ZH-CN">　　<img src="../image/up6/8.png"></font></p>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　能被</font><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">总结为公式：</font></p>
+  <p><font face="宋体" lang="ZH-CN">　　<img src="../image/up6/9.png"></font></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　（</font><FONT FACE=" ,Times New Roman">mod11</FONT><FONT FACE="宋体" LANG="ZH-CN">）；（</FONT><FONT FACE=" ,Times New Roman">mod13</FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <p>　　<img src="../image/up6/10.png"></p>
+  <p>当倍数）。</p>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　表述为：判定某数能否被</font><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，只要把这个数的末三位与前面隔开，分成两个独立的数，取它们的差（大减小），看它是否被</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　此法则可以连续使用。</P>
+  </FONT> 
+  <p><FONT FACE="宋体" LANG="ZH-CN">　　例：</font><FONT FACE=" ,Times New Roman">N=31428576.</FONT><FONT FACE="宋体" LANG="ZH-CN">判定</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">是否被</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></p>
+  <p align="center"><img src="../image/up6/11.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　因为</font><FONT FACE=" ,Times New Roman">822</FONT><FONT FACE="宋体" LANG="ZH-CN">不能被</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，所以</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">不能被</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　例：</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">215332.</FONT><FONT FACE="宋体" LANG="ZH-CN">判定</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">是否被</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></p>
+  <p align="center"><img src="../image/up6/12.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　由于</font><FONT FACE=" ,Times New Roman">117</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">，所以</FONT><FONT FACE=" ,Times New Roman">117</FONT><FONT FACE="宋体" LANG="ZH-CN">能被</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，但不能被</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，因此</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">能被</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，不能被</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　此方法的优点在于当判定一个较大的数能否被</font><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除时，可用减法把这个大数化为一个至多是三位的数，然后再进行判定。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　如</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">987654321.</FONT><FONT FACE="宋体" LANG="ZH-CN">判定</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">能否被</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除？</font></p>
+  <p align="center"><img src="../image/up6/13.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　而</font><FONT FACE=" ,Times New Roman">654=50</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">13+4</FONT><FONT FACE="宋体" LANG="ZH-CN">，所以原数不能被</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">整除</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">如直接计算，很费力：</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">987654321=75973409</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　下面研究可否被</font><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">整除的简易判别法</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">回顾对比前面，由等式</FONT><FONT FACE=" ,Times New Roman">1001</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">11</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">的启发，才有简捷的“隔位相减判整除性”的方法</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">对于质数</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">，我们有下面一些等式：</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">6</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">102</FONT><FONT FACE="宋体" LANG="ZH-CN">，</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">59=1003</FONT><FONT FACE="宋体" LANG="ZH-CN">，</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">588=9996</FONT><FONT FACE="宋体" LANG="ZH-CN">，</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">5882=99994</FONT><FONT FACE="宋体" LANG="ZH-CN">，</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　我们不妨从</font><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">59=1003</FONT><FONT FACE="宋体" LANG="ZH-CN">出发。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <p>　　<img src="../image/up6/14.png"></p>
+  <p>　　<img src="../image/up6/15.png"></p>
+  <p>　　<img src="../image/up6/16.png"></p>
+  <p>　　<img src="../image/up6/17.png"></p>
+  <P>　　<img src="../image/up6/18.png"></P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　因此，判定一个数可否被</font><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，只要将其末三位与前面隔开，看末三位数与前面隔出数的</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">倍的差（大减小）是否被</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　例：</font><FONT FACE=" ,Times New Roman">N=31428576</FONT><FONT FACE="宋体" LANG="ZH-CN">，判定</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">能否被</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></p>
+  <p align="center"><img src="../image/up6/19.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　而</font><FONT FACE=" ,Times New Roman">429=25</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">17+4</FONT><FONT FACE="宋体" LANG="ZH-CN">，所以</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">不能被</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　例：</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">2661027</FONT><FONT FACE="宋体" LANG="ZH-CN">能否被</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">整除？</font></p>
+  <p align="center"><img src="../image/up6/20.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　又</font><FONT FACE=" ,Times New Roman">935=55</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　所以</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">可被</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　下面来推导被</font><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">整除的简易判别法。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　寻找关键性式子：</font><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">52=988</FONT><FONT FACE="宋体" LANG="ZH-CN">，</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">53=1007.</font></P>
+  <FONT FACE=" ,Times New Roman"> 
+  <p>　　<img src="../image/up6/21.png"></p>
+  <p>　　<img src="../image/up6/22.png"></p>
+  <p>　　<img src="../image/up6/23.png"></p>
+  <p>　　<img src="../image/up6/24.png"></p>
+  <p>　　<img src="../image/up6/25.png"></p>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　因此，判定一个数可否被</font><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，只要将其末三位与前面隔开，看末三位与前面隔出数的</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">倍的差（大减小）是否被</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　例：</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">123456789</FONT><FONT FACE="宋体" LANG="ZH-CN">可否被</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">整除？</font></p>
+  <p align="center"><img src="../image/up6/26.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　又</font><FONT FACE=" ,Times New Roman">603</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">31</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">19+14</FONT><FONT FACE="宋体" LANG="ZH-CN">，所以</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">不能被</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　例：</font><FONT FACE=" ,Times New Roman">N=6111426</FONT><FONT FACE="宋体" LANG="ZH-CN">可否被</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">整除？</font></p>
+  <p align="center"><img src="../image/up6/27.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　又</font><FONT FACE=" ,Times New Roman">57=3</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">，所以</FONT><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">可被</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">整除：</FONT><FONT FACE=" ,Times New Roman">321654</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">19=6111426</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　下面来推导被</font><FONT FACE=" ,Times New Roman">23</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">29</FONT><FONT FACE="宋体" LANG="ZH-CN">整除的简易判别法。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　寻找关键性式子，随着质数增大，简易法应该在</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">的位数多时起主要作用，现有</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">23</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">435</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">10005</FONT><FONT FACE="宋体" LANG="ZH-CN">，</FONT><FONT FACE=" ,Times New Roman">29</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">345=10005</FONT><FONT FACE="宋体" LANG="ZH-CN">，</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　由此启发得到一个末四位隔开的方法：</P>
+  <p>　　<img src="../image/up6/28.png"></p>
+  <p>　　<img src="../image/up6/29.png"></p>
+  <p>　　<img src="../image/up6/30.png"><br>
+    　　<img src="../image/up6/31.png"></p>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　因此，判定一个数可否被</font><FONT FACE=" ,Times New Roman">23</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">29</FONT><FONT FACE="宋体" LANG="ZH-CN">整除，只要将其末四位与前面隔开，看末四位与前面隔出数的</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">倍的差（大减小）是否被</FONT><FONT FACE=" ,Times New Roman">23</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">29</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　例：</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">6938801</FONT><FONT FACE="宋体" LANG="ZH-CN">能否被</FONT><FONT FACE=" ,Times New Roman">23</FONT><FONT FACE="宋体" LANG="ZH-CN">或</FONT><FONT FACE=" ,Times New Roman">29</FONT><FONT FACE="宋体" LANG="ZH-CN">整除？</font></p>
+  <p align="center"><img src="../image/up6/32.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　又</font><FONT FACE=" ,Times New Roman">5336</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">23</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">232</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">23</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">29</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">8</FONT><FONT FACE="宋体" LANG="ZH-CN">，</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　所以很快判出</font><FONT FACE=" ,Times New Roman">N</FONT><FONT FACE="宋体" LANG="ZH-CN">可被</FONT><FONT FACE=" ,Times New Roman">23</FONT><FONT FACE="宋体" LANG="ZH-CN">及</FONT><FONT FACE=" ,Times New Roman">29</FONT><FONT FACE="宋体" LANG="ZH-CN">整除。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　最后，如读者还想寻找以上数的更简明判别法，或被</font><FONT FACE=" ,Times New Roman">31</FONT><FONT FACE="宋体" LANG="ZH-CN">以上质数整除的判别法，都是可以去探索的</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">把这一节得到的公式简列于下：</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　<img src="../image/up6/33.png"><br>
+    　　<img src="../image/up6/34.png"><br>
+    　　<img src="../image/up6/35.png"><br>
+    　　<img src="../image/up6/36.png"><br>　　<img src="../image/up6/37.png"><br>
+  　　<img src="../image/up6/38.png">　<br>
+  　　<img src="../image/up6/39.png"><br>
+  
+  
+  
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　（可在上述这些同余式的右端加上相应质数的适当倍数）</font><FONT FACE=" ,Times New Roman">.</font></P>
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　后两式没有证明，读者不难从</font><FONT FACE=" ,Times New Roman">999=37</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">27</FONT><FONT FACE="宋体" LANG="ZH-CN">，</FONT><FONT FACE=" ,Times New Roman">992</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">31</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">32</FONT><FONT FACE="宋体" LANG="ZH-CN">启发出“隔位加”的判别法。</font></P>
+              </div>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>
