@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>奥数学习</title>
+   <style>
+        h2 {
+            text-align:center;
+        }
+</style>
+</head>
+<body style="background-color:white;">
+<a href="../menu.html?type=down"><button type="button" class="btn btn-primary btn-lg">返回</button></a>
+    <div class="container-fluid">
+        <div style="text-align:centerleft">
+            <div style="margin-left: 20%;width: 60%;">
+			  <div id = "main">
+                <h2>第十二讲 抽屉原理的一般表述</h2>
+				<P><FONT FACE="宋体" LANG="ZH-CN">　　我们知道，把</font><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">个苹果随意放进两个抽屉里，至少有一个抽屉里有两上或两个以上的苹果</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">如果把</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">个苹果放进两个抽屉里，上述结果当然还能成立</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">能不能有更强一点的结果呢？我们发现把</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">个苹果往两个抽屉里放，即使每个抽屉都放</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">个还剩</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">个苹果，这个苹果无论放到哪个抽屉里都会出现有一个抽屉里有</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">个苹果</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">同样，如果苹果个数变为</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">个，那么就可以保证有一个抽屉里至少有</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">个苹果了。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <p>　　这里有什么规律呢？</p>
+  <p align="center"><img src="../image/up12/1.png"></p>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　先将苹果平均分到各个抽屉里，如果至少还余</font><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">个苹果，那么多余的苹果无论再放入哪个抽屉中都可以保证至少有一个抽屉里有（商</FONT><FONT FACE=" ,Times New Roman">+1</FONT><FONT FACE="宋体" LANG="ZH-CN">）个（或更多的）苹果。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　这样，可得到下述加强的抽屉原理：</P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　把多于</font><FONT FACE=" ,Times New Roman">m</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">n</FONT><FONT FACE="宋体" LANG="ZH-CN">个苹果随意放进</FONT><FONT FACE=" ,Times New Roman">n</FONT><FONT FACE="宋体" LANG="ZH-CN">个抽屉里，那么至少有一个抽屉里有（</FONT><FONT FACE=" ,Times New Roman">m+1</FONT><FONT FACE="宋体" LANG="ZH-CN">）个或（</FONT><FONT FACE=" ,Times New Roman">m</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">）个以上的苹果。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">例</font></b><B><FONT FACE=" ,Times New Roman">1 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">①求证：任意</FONT><FONT FACE=" ,Times New Roman">25</FONT><FONT FACE="宋体" LANG="ZH-CN">个人中，至少有</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">个人的属相相同</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">②要想保证至少有</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">个人的属相相同，但不能保证有</FONT><FONT FACE=" ,Times New Roman">6</FONT><FONT FACE="宋体" LANG="ZH-CN">个人属相相同，那么人的总数应在什么范围内？</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">分析与解答</font></b><B><FONT FACE=" ,Times New Roman"> 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">①把</FONT><FONT FACE=" ,Times New Roman">12</FONT><FONT FACE="宋体" LANG="ZH-CN">种属相看作</FONT><FONT FACE=" ,Times New Roman">12</FONT><FONT FACE="宋体" LANG="ZH-CN">个抽屉。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　因为</font><FONT FACE=" ,Times New Roman">25</FONT><FONT FACE="宋体" LANG="ZH-CN">÷</FONT><FONT FACE=" ,Times New Roman">12=2</FONT><FONT FACE="宋体" LANG="ZH-CN">…</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">，</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　所以，根据抽屉原理，至少有</font><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">个人的属相相同。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　②要保证有</font><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">个人的属相相同，总人数最少为：</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">12+1=49</FONT><FONT FACE="宋体" LANG="ZH-CN">（人）。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　不能保证有</font><FONT FACE=" ,Times New Roman">6</FONT><FONT FACE="宋体" LANG="ZH-CN">个人属相相同的最多人数为：</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">12=60</FONT><FONT FACE="宋体" LANG="ZH-CN">（人）。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　所以，总人数应在</font><FONT FACE=" ,Times New Roman">49</FONT><FONT FACE="宋体" LANG="ZH-CN">人到</FONT><FONT FACE=" ,Times New Roman">60</FONT><FONT FACE="宋体" LANG="ZH-CN">人的范围内。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">例</font></b><B><FONT FACE=" ,Times New Roman">2 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">放体育用品的仓库里有许多足球、排球和篮球</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">有</FONT><FONT FACE=" ,Times New Roman">66</FONT><FONT FACE="宋体" LANG="ZH-CN">名同学来仓库拿球，要求每人至少拿</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">个球，至多拿</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">个球</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">问：至少有多少名同学所拿的球种类是完全一样的？</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">分析与解答</font></b><B><FONT FACE=" ,Times New Roman"> 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">拿球的配组方式有以下</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">种：</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　｛足｝，｛排｝，｛篮｝，｛足，足｝，｛排，排｝，｛篮，篮｝，｛足，排｝，｛足，篮｝，｛排，篮｝。</P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　把这</font><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">种配组方式看作</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">个抽屉。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　因为</font><FONT FACE=" ,Times New Roman">66</FONT><FONT FACE="宋体" LANG="ZH-CN">÷</FONT><FONT FACE=" ,Times New Roman">9=7</FONT><FONT FACE="宋体" LANG="ZH-CN">…</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">，</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　所以至少有</font><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">8</FONT><FONT FACE="宋体" LANG="ZH-CN">（名）同学所拿的球的种类是完全一样的。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">例</font></b><B><FONT FACE=" ,Times New Roman">3 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">一副扑克牌，共</FONT><FONT FACE=" ,Times New Roman">54</FONT><FONT FACE="宋体" LANG="ZH-CN">张，问：至少从中摸出多少张牌才能保证①至少有</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌的花色相同；②四种花色的牌都有；③至少有</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌是红桃。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">分析与解答</font></b><B><FONT FACE=" ,Times New Roman"> 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">一副扑克牌有四种花色，每种花色各</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">张，另外还有两张王牌。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　①为了“保证”</font><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌花色相同，我们应从最“坏”的情况去分析，即先摸出了两张王牌</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">把四种花色看作</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">个抽屉，要想有</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌属于同一抽屉，只需再摸出</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">4+1</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">（张），也就是共摸出</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">即至少摸出</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌，才能保证其中有</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌的花色相同。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　②因为每种花色有</font><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">若考虑最“坏”的情况，即摸出了</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">张王牌和三种花色的所有牌共计</FONT><FONT FACE=" ,Times New Roman">13</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">2=41</FONT><FONT FACE="宋体" LANG="ZH-CN">（张），这时，只需再摸一张即一共</FONT><FONT FACE=" ,Times New Roman">42</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌，就保证四种花色的牌都有了</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">即至少摸出</FONT><FONT FACE=" ,Times New Roman">42</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌才能保证四种花色的牌都有。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　③最坏的情形是先摸出了</font><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">张王牌和方块、黑桃、梅花三种花色所有牌共计</FONT><FONT FACE=" ,Times New Roman">41</FONT><FONT FACE="宋体" LANG="ZH-CN">张，只剩红桃牌</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">这时只需再摸</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">张，就保证有</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌是红桃了</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">即至少摸出</FONT><FONT FACE=" ,Times New Roman">44</FONT><FONT FACE="宋体" LANG="ZH-CN">张牌，才能保证其中至少有</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">张红桃牌。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">例</font></b><B><FONT FACE=" ,Times New Roman">4 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">平面上给定</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">个点，如果任意三个点中总有两个点之间的距离小于</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">，证明：在这</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">个点中必有</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">个点可以落在同一半径为</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">的圆内。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <p><B><FONT FACE="宋体" LANG="ZH-CN">分析与解答</font></b><B><FONT FACE=" ,Times New Roman"> 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">如果</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">个点中，任意两点之间的距离都小于</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">，那么，以这</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">个点中任意一点为圆心，以</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">为半径作一个圆，这</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">个点必然全落在这个圆内</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">如果这</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">个点中，有两点之间距离不小于</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">（即大于</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">或等于</font></p>
+  <p align="center"><img src="../image/up12/2.png"></p>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P ALIGN="CENTER"></P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　</font><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">），设这两点为</FONT><FONT FACE=" ,Times New Roman">O</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">O</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">，分别以</FONT><FONT FACE=" ,Times New Roman">O</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">O</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">为圆心，</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">为半径作两个圆（如图）</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">把这两个圆看作两个抽屉，由于任意三点中总有两个点之间的距离小于</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">，因此其他</FONT><FONT FACE=" ,Times New Roman">15</FONT><FONT FACE="宋体" LANG="ZH-CN">个点中的每一点，到</FONT><FONT FACE=" ,Times New Roman">O</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">O</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">的距离必有一个小于</FONT><FONT FACE=" ,Times New Roman">1.</FONT><FONT FACE="宋体" LANG="ZH-CN">也就是说这些点必落在某一个圆中</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">根据抽屉原理必有一个圆至少包含这</FONT><FONT FACE=" ,Times New Roman">15</FONT><FONT FACE="宋体" LANG="ZH-CN">个点中的</FONT><FONT FACE=" ,Times New Roman">8</FONT><FONT FACE="宋体" LANG="ZH-CN">个点</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">由于圆心是</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">个点中的一点，因此这个圆至少包含</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">个点中的</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">个点</FONT><FONT FACE=" ,Times New Roman">.</font></P>
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">例</font><FONT FACE=" ,Times New Roman">5 
+    </FONT></b><FONT FACE="宋体" LANG="ZH-CN">把</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">、…、</FONT><FONT FACE=" ,Times New Roman">10</FONT><FONT FACE="宋体" LANG="ZH-CN">这十个数按任意顺序排成一圈，求证在这一圈数中一定有相邻的三个数之和不小于</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <p><B><FONT FACE="宋体" LANG="ZH-CN">分析与解答</font></b><B><FONT FACE=" ,Times New Roman"> 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">把这一圈从某一个数开始按顺时针方向分别记为</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、…、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>10</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">（见图）</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">相邻的三个数为一组，有</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>4</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>4</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>5</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、…、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>9</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>10</sub></FONT><FONT FACE=" ,Times New Roman">d</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>10</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">共</FONT><FONT FACE=" ,Times New Roman">10</FONT><FONT FACE="宋体" LANG="ZH-CN">组。</font></p>
+  <p align="center"><img src="../image/up12/3.png"></p>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P ALIGN="CENTER"></P>
+  <P>　　这十组数的和的总和为</P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　（</font><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）＋（</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>4</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）＋…</FONT><FONT FACE=" ,Times New Roman">+</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>10</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　＝</font><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋…</FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>10</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　＝</font><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">55=165</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">16</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">10</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">5</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　根据抽屉原理这十组数中至少有一组数的和不小于</font><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　这道题还可以用下面的方法证明：</P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　在</font><FONT FACE=" ,Times New Roman">10</FONT><FONT FACE="宋体" LANG="ZH-CN">个数中一定有一个数是</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">，设</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>10</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">，除去</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>10</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">之外，把</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、…、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>9</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">这</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">个数按顺序分为三组</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>4</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>5</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>6</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>7</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>8</sub></FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>9</sub></FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">下面证明这三组中至少有一组数之和不小于</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P>　　因为这三组数之和的总和为</P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　（</font><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>3</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）＋（</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>4</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>5</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>6</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）</FONT><FONT FACE=" ,Times New Roman">+</FONT><FONT FACE="宋体" LANG="ZH-CN">（</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>7</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>8</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>9</sub></FONT><FONT FACE="宋体" LANG="ZH-CN">）</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　＝</font><FONT FACE=" ,Times New Roman">a</FONT><FONT SIZE=2><sub>1</sub></FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>2</sub></FONT><FONT FACE=" ,Times New Roman">+</FONT><FONT FACE="宋体" LANG="ZH-CN">…</FONT><FONT FACE=" ,Times New Roman">+a</FONT><FONT SIZE=2><sub>9</sub></font></P>
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　＝</font><FONT FACE=" ,Times New Roman">2+3+</FONT><FONT FACE="宋体" LANG="ZH-CN">…＋</FONT><FONT FACE=" ,Times New Roman">10</font></P>
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　＝</font><FONT FACE=" ,Times New Roman">54</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">16+6</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　根据抽屉原理这三组数中至少有一组数之和不小于</font><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">。</font></P>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">　　第二种证法中去掉了最小数</font><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">，其实若去掉</FONT><FONT FACE=" ,Times New Roman">2</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">也可以的，因为</FONT><FONT FACE=" ,Times New Roman">54=3</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">17</FONT><FONT FACE="宋体" LANG="ZH-CN">＋</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">，所以用第二种证法还可以得出至少有一组数的和不小于</FONT><FONT FACE=" ,Times New Roman">18</FONT><FONT FACE="宋体" LANG="ZH-CN">的结论，而第一种证法却不能得出这个结论。</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　此外，由于</font><FONT FACE=" ,Times New Roman">54=3</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">18</FONT><FONT FACE="宋体" LANG="ZH-CN">，因此即使第二种证法也不能由抽屉原理得出三组数中至少有一组数的和不小于</FONT><FONT FACE=" ,Times New Roman">19</FONT><FONT FACE="宋体" LANG="ZH-CN">的结论</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">事实上，如右图中所示，划了线的三组数的和都是</FONT><FONT FACE=" ,Times New Roman">18</FONT><FONT FACE="宋体" LANG="ZH-CN">（并且其他任何三个相邻数之和都小于</FONT><FONT FACE=" ,Times New Roman">18</FONT><FONT FACE="宋体" LANG="ZH-CN">）。</font></p>
+  <p align="center"><img src="../image/up12/4.png"></p>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P ALIGN="CENTER"></P>
+  </FONT> 
+  <p><B><FONT FACE="宋体" LANG="ZH-CN">例</font></b><B><FONT FACE=" ,Times New Roman">6 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">在边长为</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">米的正方形内，任意放入</FONT><FONT FACE=" ,Times New Roman">28</FONT><FONT FACE="宋体" LANG="ZH-CN">个点，求证：必有</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">个点，以它们为顶点的四边形的面积不超过</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">平方米。分析与解答根据题目的结论，考虑把这个大正方形分割成面积为</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">平方米的</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">个小正方形（如右图）。</font></p>
+  <p align="center"><img src="../image/up12/5.png"></p>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P ALIGN="CENTER"></P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　因为</font><FONT FACE=" ,Times New Roman">28</FONT><FONT FACE="宋体" LANG="ZH-CN">＝</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">×</FONT><FONT FACE=" ,Times New Roman">9+1</FONT><FONT FACE="宋体" LANG="ZH-CN">，</font></P>
+  <p> <FONT FACE="宋体" LANG="ZH-CN">　　所以根据抽屉原理，至少有</font><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">个点落在同一个边长为</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">米的小正方形内（或边上）</font></p>
+  <p align="center"><img src="../image/up12/6.png"></p>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P ALIGN="CENTER"></P>
+  </FONT> 
+  <P><FONT FACE="宋体" LANG="ZH-CN">　　（图），这</font><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">个点所连成的四边形的面积总小于或等于小正方形的面积，即以这</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">个点为顶点的四边形的面积不超过</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">平方米。例</FONT><FONT FACE=" ,Times New Roman">7</FONT><FONT FACE="宋体" LANG="ZH-CN">在边长为</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">米的正方形内，任意放入</FONT><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">个点</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">求证：至少有</FONT><FONT FACE=" ,Times New Roman">3</FONT><FONT FACE="宋体" LANG="ZH-CN">个点，以这三个点为顶点的三角形<img src="../image/up12/7.png"></font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> </FONT> 
+  <P><B><FONT FACE="宋体" LANG="ZH-CN">分析与解答</font></b><B><FONT FACE=" ,Times New Roman"> 
+    </font></B><FONT FACE="宋体" LANG="ZH-CN">把边长为</FONT><FONT FACE=" ,Times New Roman">1</FONT><FONT FACE="宋体" LANG="ZH-CN">米的正方形取各边的中点，把对边中点相连<img src="../image/up12/8.png"></font><br>
+   <FONT FACE="宋体" LANG="ZH-CN">个抽屉，把</font><FONT FACE=" ,Times New Roman">9</FONT><FONT FACE="宋体" LANG="ZH-CN">个点随意放入</FONT><FONT FACE=" ,Times New Roman">4</FONT><FONT FACE="宋体" LANG="ZH-CN">个抽屉</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">根据抽屉原理，有一个抽屉中至少有</FONT><FONT FACE=" ,Times New Roman">3</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P ALIGN="CENTER"></P>
+  </FONT> 
+  <div align="center"><img src="../image/up12/9.png"> </div>
+  <p><FONT FACE="宋体" LANG="ZH-CN">　　点为顶点的三角形的面积不大于小正方形面积的一半</font><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">设</FONT><FONT FACE=" ,Times New Roman">A</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">B</FONT><FONT FACE="宋体" LANG="ZH-CN">、</FONT><FONT FACE=" ,Times New Roman">C</FONT><FONT FACE="宋体" LANG="ZH-CN">三点在同一个小正方形内</FONT><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">如果△</FONT><FONT FACE=" ,Times New Roman">ABC</FONT><FONT FACE="宋体" LANG="ZH-CN">中的某一条边</FONT><FONT FACE=" ,Times New Roman">BC</FONT><FONT FACE="宋体" LANG="ZH-CN">与小正方形的边平行（如图），则</font></p>
+  <p>　　<img src="../image/up12/10.png"></p>
+  <P> <FONT FACE="宋体" LANG="ZH-CN">与小正方形的边不平行（如图）</font><FONT FACE=" ,Times New Roman">.</FONT><FONT FACE="宋体" LANG="ZH-CN">则可过其中一点</FONT><FONT FACE=" ,Times New Roman">B</FONT><FONT FACE="宋体" LANG="ZH-CN">作</FONT><FONT FACE=" ,Times New Roman">BD</FONT><FONT FACE="宋体" LANG="ZH-CN">与小正方形边平行，它将△</FONT><FONT FACE=" ,Times New Roman">ABC</FONT><FONT FACE="宋体" LANG="ZH-CN">分成两个三角形：△</FONT><FONT FACE=" ,Times New Roman">ABD</FONT><FONT FACE="宋体" LANG="ZH-CN">与△</FONT><FONT FACE=" ,Times New Roman">BCD.</FONT><FONT FACE="宋体" LANG="ZH-CN">则</font></P>
+  <FONT FACE="宋体" LANG="ZH-CN"> 
+  <P ALIGN="CENTER"></P>
+  <P align="center">　<img src="../image/up12/11.png"></P>
+  <P>　　<img src="../image/up12/12.png"></P>
+  <P>　　<img src="../image/up12/13.png"></P>
+  <P>　　<img src="../image/up12/14.png"></P>
+  <p>　　<img src="../image/up12/15.png"><br>
+  平方米。</p>
+              </div>
+			</div>
+        </div>
+    </div>
+
+</body>
+</html>
